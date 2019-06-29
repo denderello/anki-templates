@@ -1,0 +1,21 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Anki Card Templates</title>
+  <meta name="description" content="Anki Card Templates">
+
+  <link href="{{ url_for('static', filename='css/base.scss.css') }}"
+      rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  <h1>This is card {{card_type}}</h1>
+  <div id=card>
+    {% block card_content %}{% endblock %}
+  </div>
+</body>
+</html>
